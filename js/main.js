@@ -33,5 +33,5 @@ $btnBounce.on('click', function () {
 });
 
 $btnAppend.on('click', function () {
-  $list.toggleClass('add');
+  $list.toggleClass('add-list');
 });
