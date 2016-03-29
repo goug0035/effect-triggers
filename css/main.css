@@ -57,7 +57,7 @@ div {
 }
 
 .movein {
-  right: 55px
+  right: 55px;
 }
 
 .panel {
@@ -85,9 +85,37 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
   background-color: orange;
   border-radius: 50%;
+}
+
+.bounce {
+  animation: bounce 1s linear;
+}
+
+@keyframes bounce {
+
+  0% {
+    top: 45px;
+    right: -100px;
+  }
+
+  25% {
+    top: 10px;
+  }
+
+  50% {
+    top: 40px;
+  }
+
+  75% {
+    top: 10px;
+  }
+
+  100% {
+    top: 45px;
+    right: 150px;
+  }
 }
 
 .list {
@@ -114,4 +142,16 @@ div {
   overflow: hidden;
 
   color: mediumpurple;
+  animation: expand .3s forwards ease;
+}
+
+@keyframes expand {
+
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 1.5em;
+  }
 }
